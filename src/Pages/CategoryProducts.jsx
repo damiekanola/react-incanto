@@ -9,8 +9,8 @@ export default function CategoryProducts({ item }) {
       <img
         src={
           secondImage
-            ? `/images/${item.imgHover}`
-            : `/images/${item.img}`
+            ? `/Images/${item.imgHover}`
+            : `/Images/${item.img}`
         }
         alt=""
         className="w-full aspect-square"
