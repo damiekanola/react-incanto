@@ -14,7 +14,7 @@ export default function CategoryProductPage() {
       <Navbar />
 
       <img
-        src="/src/images/good fortune.jpg"
+        src="/images/good fortune.jpg"
         alt=""
         className="px-32 max-[893px]:px-10 object-cover max-[640px]:hidden"
       />

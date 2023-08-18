@@ -3,7 +3,7 @@ export default function CategoryGroup({ name, url }) {
         <>
         <div className=" pb-20 font-light text-xl">
             <div className="">
-            <img src={`./src/images/${url}`} alt="" className="transition-transform transform-gpu hover:scale-105" />
+            <img src={`/images/${url}`} alt="" className="transition-transform transform-gpu hover:scale-105" />
             </div>
             <p className="text-center p-4">{name}</p>
         </div>
