@@ -25,10 +25,10 @@ export default function ProductPage() {
       <div className=" pt-10 px-10 grid grid-cols-2 gap-12 max-[805px]:hidden">
         <div className=" aspect-square">
           <Carousel indicators={leftArrow}>
-          <img src="/src/images/born.jpg" alt="" className="" />
-          <img src="/src/images/born in roma 2.jpg" alt="" className="" />
-          <img src="/src/images/born 3.jpg" alt="" className="" />
-          <img src="/src/images/born 4.jpg" alt="" className="" />
+          <img src={`/src/images/${product.img}`} alt="" className="" />
+          <img src={`/src/images/${product.img}`} alt="" className="" />
+          <img src={`/src/images/${product.img}`} alt="" className="" />
+          <img src={`/src/images/${product.img}`} alt="" className="" />
           </Carousel>
         </div>
 
@@ -62,7 +62,7 @@ export default function ProductPage() {
 
         <Carousel slide={false} leftControl="&larr;" rightControl="&rarr;" >
           <img
-            src={`/src/images/born.jpg`}
+            src={`/src/images/${product.img}`}
             alt=""
             className=" mb-4 px-10 max-[453px]:px-0 object-cover"
           />
