@@ -5,10 +5,15 @@ import {
   faBars,
   faX
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
+import { CartState } from "../Context/Context";
 
 
 export default function Navbar({ handleToggle, isOpen}) {
-  
+  const {
+    state: { cart },
+    
+  } = CartState();
   return (
     <>
       <div className=" bg-[#fcf9ee] p-5 flex justify-between items-center font-[Montserrat]">
@@ -24,9 +29,12 @@ export default function Navbar({ handleToggle, isOpen}) {
           onClick={handleToggle}
         />
        }
-        <h1 className=" font-[360] text-3xl max-[800px]:text-2xl">
+       <Link to={"/"}>
+       <h1 className=" font-[360] text-3xl max-[800px]:text-2xl">
           INCANTO
         </h1>
+       </Link>
+       
         <div className="flex items-center justify-between">
           <div className=" bg-[#f0f0f0] rounded-2xl p-1 max-[800px]:hidden">
             <FontAwesomeIcon
@@ -35,7 +43,7 @@ export default function Navbar({ handleToggle, isOpen}) {
             />
             <input
               type="text"
-              className=" placeholder: p-[4px] flex-1 bg-inherit focus:outline-none"
+              className=" placeholder: p-[4px] flex-1 bg-inherit outline-none focus:outline-none border-none focus:border-none"
               placeholder="Search..."
             />
           </div>
@@ -44,7 +52,12 @@ export default function Navbar({ handleToggle, isOpen}) {
             style={{ color: "#000000" }}
             className=" hidden max-[800px]:block pr-3"
           />
+          <Link to={"/cart"}>
+            <div className=" relative">
           <FontAwesomeIcon icon={faShoppingCart} className=" pl-4" />
+          {cart.length >= 1 && <span className=" bg-slate-200 rounded-full p-[2px] text-xs absolute top-[-6px]">{cart.length}</span>}
+          </div>
+          </Link>
         </div>
       </div>
       {/* <div className=" w-[200px] relative top-[-70px] z-[1]">

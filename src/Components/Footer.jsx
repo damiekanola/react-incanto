@@ -11,7 +11,7 @@ export default function FooterWithSocialMediaIcons() {
             <Footer.Brand
               alt="Flowbite Logo"
               href="https://flowbite.com"
-              name="Flowbite"
+              name="INCANTO"
               src="https://flowbite.com/docs/images/logo.svg"
             />
           </div>
@@ -20,7 +20,7 @@ export default function FooterWithSocialMediaIcons() {
               <Footer.Title title="about" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">
-                  Flowbite
+                  INCANTO
                 </Footer.Link>
                 <Footer.Link href="#">
                   Tailwind CSS
@@ -31,10 +31,10 @@ export default function FooterWithSocialMediaIcons() {
               <Footer.Title title="Follow us" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">
-                  Github
+                 Instagram
                 </Footer.Link>
                 <Footer.Link href="#">
-                  Discord
+                  Twitter
                 </Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -54,9 +54,9 @@ export default function FooterWithSocialMediaIcons() {
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
           <Footer.Copyright
-            by="Flowbite™"
+            by="Incanto™"
             href="#"
-            year={2022}
+            year={2023}
           />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon

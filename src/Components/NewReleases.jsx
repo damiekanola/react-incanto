@@ -12,7 +12,7 @@ export default function NewRealeases() {
         <h1 className=" font-light text-3xl max-[562px]:text-2xl uppercase">
           New Releases
         </h1>
-        <div className=" pt-20 flex flex-nowrap overflow-x-auto gap-5 scrollbar-hide">
+        <ul className=" pt-20 flex flex-nowrap overflow-x-auto gap-5 scrollbar-hide">
           {data.newreleases.map((item) => (
             <Link key={item.id} to={`/productpage/${item.tag}/${item.id}`}>
             <NewProducts
@@ -23,7 +23,7 @@ export default function NewRealeases() {
             </Link>
             
           ))}
-        </div>
+        </ul>
       </div>
     </>
   );

@@ -205,7 +205,7 @@
     {
       "id": 400,
       "name": "Black Opium",
-      "price": "70,000",
+      "price": 70000,
       "tag": "bestsellers",
       "img": "opium.jpg",
       "description": "Indulge in the captivating allure of Black Opium, a fragrance that weaves together an enchanting tapestry of scents. With its alluring blend of notes, including rich coffee, creamy vanilla, and delicate white flowers, Black Opium exudes an aura of mystery and sensuality. The top notes of zesty citrus and pink pepper lead you into the heart of the fragrance, where the sweet and intoxicating scent of jasmine intertwines with the warmth of vanilla. As the scent settles, base notes of cedarwood and patchouli add depth and a touch of smokiness. Whether worn during a glamorous night out or a cozy evening in, Black Opium is a fragrance that leaves an unforgettable impression."
@@ -269,12 +269,7 @@
   ],
 
   "newreleases": [
-    {
-      "name": "Dior Dioriviera",
-      "img": "Dior riviera.jpg",
-      "tag": "newreleases",
-      "price": "87,000"
-    },
+
     {
       "name": "My Way Parfum",
       "url": "armani my way new.jpg",
