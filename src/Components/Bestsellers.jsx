@@ -13,10 +13,8 @@ export default function BestsellersList() {
           {data.bestsellers.map((item) => (
             <Link key={item.name} to={`/productpage/${item.tag}/${item.id}`}>
              <Bestseller
-              name={item.name}
-              key={item.name}
-              img={item.img}
-              price={item.price}
+             key={item.id}
+              item={item}
             />
             </Link>
            

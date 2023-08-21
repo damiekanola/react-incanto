@@ -1,4 +1,7 @@
 {
+  "allproducts": [
+
+  ],
   "gender": [
     {
       "name": "WOMEN",
@@ -27,6 +30,7 @@
       "id": 100,
       "name": "Black Opium",
       "price": 70000,
+      "price30": 30000,
       "img": "opium.jpg",
       "imgHover": "opium 2.jpg",
       "to": "/productpage",
@@ -36,7 +40,8 @@
     {
       "id": 101,
       "name": "Mango Skin",
-      "price": "70,000",
+      "price": 88000,
+      "price30": 35000,
       "img": "mango skin.jpg",
       "imgHover": "mango skin.jpg",
       "to": "/productpage",
@@ -46,7 +51,8 @@
     {
       "id": 102,
       "name": "Flowerbomb",
-      "price": "99,000",
+      "price": 99000,
+      "price30": 38000,
       "img": "flowerbomb.jpg",
       "imgHover": "flowerbomb 2.jpg",
       "to": "/productpage",
@@ -56,7 +62,8 @@
     {
       "id": 103,
       "name": "Missing Person",
-      "price": "88,000",
+      "price":80000,
+      "price30": 32000,
       "img": "missing person.jpg",
       "imgHover": "missing person 2.jpg",
       "to": "/productpage",
@@ -66,7 +73,8 @@
     {
       "id": 104,
       "name": "Glossier You",
-      "price": "67,000",
+      "price": 67000,
+    "price30": 28000,
       "img": "you.jpg",
       "imgHover": "you.jpg",
       "to": "/productpage",
@@ -76,7 +84,8 @@
     {
       "id": 105,
       "name": "YSL Mon Paris",
-      "price": "75,000",
+      "price": 75000,
+    "price30": 30000,
       "img": "mon paris.jpg",
       "imgHover": "mon paris 2.jpg",
       "to": "/productpage",
@@ -86,7 +95,8 @@
     {
       "id": 106,
       "name": "Donna Born in Roma",
-      "price": "99,000",
+      "price": 99000,
+      "price30": 38000,
       "img": "born.jpg",
       "imgHover": "born in roma 2.jpg",
       "to": "/productpage",
@@ -96,7 +106,8 @@
     {
       "id": 107,
       "name": "YSL Libre",
-      "price": "70,000",
+      "price": 70000,
+      "price30": 28000,
       "img": "ysl libre.jpg",
       "imgHover": "libre 2.jpg",
       "to": "/productpage",
@@ -106,7 +117,8 @@
     {
       "id": 108,
       "name": "La vie est belle",
-      "price": "70,000",
+      "price": 70000,
+    "price30": 28000,
       "img": "la vie.jpg",
       "imgHover": "la vie 2.jpg",
       "to": "/productpage",
@@ -114,12 +126,12 @@
       "description": "Experience the joy and beauty of life with La vie est belle, a fragrance that celebrates the simple pleasures and optimism that surround us. The journey begins with an exquisite blend of sparkling iris and juicy pear, creating a fresh and uplifting opening that instantly brightens your day. As the scent evolves, a heart of elegant jasmine and sweet orange blossom unfolds, adding a touch of sophistication and femininity to the composition. The fragrance concludes with a warm and comforting embrace of gourmand accords, including vanilla and praline, enveloping you in a sense of coziness and contentment. La vie est belle is a testament to life's precious moments, a fragrance that reminds you to cherish every day and embrace the beauty that surrounds you."
     }
   ],
-
   "men": [
     {
       "id": 200,
       "name": "Aventus",
       "price": 90000,
+      "price30": 40000,
       "img": "aventus.jpg",
       "imgHover": "aventus 2.jpg",
       "tag": "men",
@@ -129,6 +141,7 @@
       "id": 201,
       "name": "Bleu de Chanel",
       "price": 80000,
+      "price30": 35000,
       "img": "bleu.jpg",
       "imgHover": "bleu 2.jpg",
       "tag": "men",
@@ -138,6 +151,7 @@
       "id": 202,
       "name": "Acqua di Gio",
       "price": 75000,
+      "price30": 30000,
       "img": "acqua.jpg",
       "imgHover": "acqua 2.jpg",
       "tag": "men",
@@ -147,6 +161,7 @@
       "id": 203,
       "name": "Dior Sauvage",
       "price": 85000,
+      "price30": 38000,
       "img": "sauvage.jpg",
       "imgHover": "sauvage.jpg",
       "tag": "men",
@@ -156,6 +171,7 @@
       "id": 204,
       "name": "Tom Ford Noir",
       "price": 95000,
+      "price30": 42000,
       "img": "tom ford.jpg",
       "imgHover": "tom ford.jpg",
       "tag": "men",
@@ -165,6 +181,7 @@
       "id": 205,
       "name": "Versace Eros",
       "price": 70000,
+      "price30": 30000,
       "img": "eros.jpg",
       "imgHover": "eros 2.jpg",
       "tag": "men",
@@ -174,6 +191,7 @@
       "id": 206,
       "name": "Giorgio Armani Code",
       "price": 78000,
+      "price30": 34000,
       "img": "armani code.jpg",
       "imgHover": "armani code 2.jpg",
       "tag": "men",
@@ -183,6 +201,7 @@
       "id": 207,
       "name": "Paco Rabanne 1 Million",
       "price": 85000,
+      "price30": 38000,
       "img": "1_million.jpg",
       "imgHover": "1_million_hover.jpg",
       "tag": "men",
@@ -192,20 +211,24 @@
       "id": 208,
       "name": "Bvlgari Man in Black",
       "price": 76000,
+      "price30": 33000,
       "img": "bvlgari_man_in_black.jpg",
       "imgHover": "bvlgari_man_in_black_hover.jpg",
       "tag": "men",
       "to": "/productpage"
     }
   ],
-
   "unisex": [],
 
   "bestsellers": [
     {
-      "id": 400,
+      "id": 100,
       "name": "Black Opium",
-      "price": 70000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "tag": "bestsellers",
       "img": "opium.jpg",
       "description": "Indulge in the captivating allure of Black Opium, a fragrance that weaves together an enchanting tapestry of scents. With its alluring blend of notes, including rich coffee, creamy vanilla, and delicate white flowers, Black Opium exudes an aura of mystery and sensuality. The top notes of zesty citrus and pink pepper lead you into the heart of the fragrance, where the sweet and intoxicating scent of jasmine intertwines with the warmth of vanilla. As the scent settles, base notes of cedarwood and patchouli add depth and a touch of smokiness. Whether worn during a glamorous night out or a cozy evening in, Black Opium is a fragrance that leaves an unforgettable impression."
@@ -213,23 +236,35 @@
     {
       "id": 401,
       "name": "Coco Mademoiselle",
-      "price": "100,000",
+      "prices": [
+        { "size": "30ml", "price": 40000 },
+        { "size": "50ml", "price": 100000 },
+        { "size": "100ml", "price": 150000 }
+      ],
       "tag": "bestsellers",
       "img": "coco made.jpg",
       "description": "Experience timeless elegance with Coco Mademoiselle, a fragrance that embodies the spirit of modern sophistication. The scent opens with a burst of zesty orange and bergamot, immediately invigorating the senses and setting the stage for a luxurious olfactory journey. As the fragrance unfolds, a bouquet of romantic rose and elegant jasmine emerge, adding a touch of femininity and grace. The journey concludes with a warm embrace of patchouli and vetiver, creating a harmonious and lasting impression. Coco Mademoiselle is a tribute to the empowered woman, a fragrance that captures the essence of refined beauty and confidence."
     },
     {
-      "id": 402,
+      "id": 101,
       "name": "Mango Skin",
-      "price": "88,000",
+      "prices": [
+        { "size": "30ml", "price": 35000 },
+        { "size": "50ml", "price": 88000 },
+        { "size": "100ml", "price": 130000 }
+      ],
       "tag": "bestsellers",
       "img": "mango skin.jpg",
       "description": "Experience the vibrant and refreshing essence of Mango Skin, a fragrance that transports you to a tropical paradise. Opening with a burst of juicy mango, zesty citrus, and succulent peach, this scent immediately awakens your senses and invokes feelings of sun-kissed bliss. The heart of the fragrance reveals a delicate bouquet of tropical florals, including plumeria and frangipani, adding an exotic touch to the composition. As the fragrance settles, a subtle yet inviting base of creamy coconut and sandalwood emerges, enveloping you in a lingering embrace of warmth and relaxation. Mango Skin captures the essence of a carefree getaway, a fragrant escape to be enjoyed every day."
     },
     {
-      "id": 403,
+      "id": 102,
       "name": "Flowerbomb",
-      "price": "99,000",
+      "prices": [
+        { "size": "30ml", "price": 38000 },
+        { "size": "50ml", "price": 99000 },
+        { "size": "100ml", "price": 145000 }
+      ],
       "tag": "bestsellers",
       "img": "flowerbomb.jpg",
       "description": "Step into a world of opulent beauty with Flowerbomb, a fragrance that embodies the art of floral extravagance. The journey begins with a dazzling explosion of floral notes, as the enchanting dance of jasmine, rose, and freesia unfolds. These delicate petals are then wrapped in a warm embrace of patchouli and vanilla, adding a luxurious depth to the composition. The result is a symphony of contrasts, where the sweetness of gourmand accords meets the sensuality of oriental elements. Flowerbomb is a declaration of femininity and glamour, a scent that captivates and enchants with its harmonious blend of floral and aromatic treasures."
@@ -237,7 +272,11 @@
     {
       "id": 404,
       "name": "Born in Roma",
-      "price": "99,000",
+      "prices": [
+        { "size": "30ml", "price": 38000 },
+        { "size": "50ml", "price": 99000 },
+        { "size": "100ml", "price": 145000 }
+      ],
       "tag": "bestsellers",
       "img": "born.jpg",
       "description": "Celebrate the essence of strength and femininity with Born in Roma, a fragrance that pays homage to the eternal city of Rome. The scent opens with a burst of zesty Italian mandarin, immediately invigorating the senses and setting the stage for the journey ahead. The heart of the fragrance reveals a delicate interplay of floral notes, including jasmine and creamy orange blossom, adding a touch of elegance and sophistication. As the scent settles, the warmth of vanilla bourbon and woody undertones create a harmonious and lasting impression. Born in Roma is a tribute to the modern woman, a scent that exudes confidence, grace, and timeless allure."
@@ -247,7 +286,11 @@
       "name": "Baccarat Rouge",
       "img": "baccarat rouge.jpg",
       "tag": "bestsellers",
-      "price": "235,000",
+      "prices": [
+        { "size": "30ml", "price": 80000 },
+        { "size": "50ml", "price": 235000 },
+        { "size": "100ml", "price": 350000 }
+      ],
       "description": "Elevate your senses with Baccarat Rouge, a fragrance that epitomizes opulence and luxury. Opening with a burst of vibrant saffron and exotic jasmine, this scent immediately captivates with its rich and decadent aroma. As the fragrance unfolds, notes of amberwood and cedarwood emerge, adding a warm and sensual depth to the composition. The journey concludes with a delicate embrace of musk, leaving a trail of elegance and sophistication. Baccarat Rouge is a celebration of indulgence and refinement, a fragrance that leaves an unforgettable impression."
     },
     {
@@ -255,57 +298,82 @@
       "name": "Cloud",
       "img": "cloud.jpg",
       "tag": "bestsellers",
-      "price": "74,000",
+      "prices": [
+        { "size": "30ml", "price": 28000 },
+        { "size": "50ml", "price": 74000 },
+        { "size": "100ml", "price": 110000 }
+      ],
       "description": "Drift away on a cloud of comfort with Cloud, a fragrance that envelops you in a dreamy and cozy embrace. Opening with a burst of playful bergamot and sweet pear, this scent immediately uplifts your spirits and sets a joyful tone. As the fragrance evolves, the heart reveals a delicate bouquet of soft and creamy florals, including vanilla orchid and praline, adding a touch of elegance and sweetness. The journey concludes with a comforting base of woody undertones and musk, creating a warm and inviting aura. Cloud is a fragrant escape to a world of pure serenity and happiness."
     },
     {
-      "id": 407,
+      "id": 103,
       "name": "Missing Person",
       "img": "missing person.jpg",
       "tag": "bestsellers",
-      "price": "80,000",
+      "prices": [
+        { "size": "30ml", "price": 28000 },
+        { "size": "50ml", "price": 74000 },
+        { "size": "100ml", "price": 110000 }
+      ],
       "description": "Discover the enigmatic allure of Missing Person, a fragrance that intrigues the senses and beckons you to embark on a captivating olfactory journey. Opening with a refreshing burst of green tea and bergamot, the fragrance immediately sets a vibrant and invigorating tone. As the scent evolves, delicate floral notes of peony and lily of the valley emerge, adding a touch of elegance and femininity. The journey concludes with a mysterious blend of woody undertones and musk, leaving a trail of intrigue in your wake. Missing Person is an embodiment of modern elegance and intrigue, a fragrance that leaves a lasting impression wherever you go."
     }
   ],
 
   "newreleases": [
-
     {
+      "id": 500,
       "name": "My Way Parfum",
       "url": "armani my way new.jpg",
       "tag": "newreleases",
-      "price": "100,000"
+      "price": 100000,
+      "price30": 45000,
+      "description": "Discover the new essence of My Way Parfum, a fragrance that embarks on a journey of self-discovery and exploration. The scent opens with a burst of luminous bergamot and sweet orange blossom, creating a fresh and invigorating opening. As the fragrance unfolds, the heart reveals a bouquet of floral notes, including tuberose and jasmine, infusing the composition with elegance and femininity. The journey concludes with the warmth of vanilla and cedarwood, leaving a trail of sophistication and sensuality. My Way Parfum is a testament to embracing one's true path and living life authentically."
     },
     {
-      "name": "MFK Aqua celestia",
+      "id": 501,
+      "name": "MFK Aqua Celestia",
       "url": "mfk new.jpg",
       "tag": "newreleases",
-      "price": "235,000"
+      "price": 235000,
+      "price30": 95000,
+      "description": "Experience the freshness and purity of MFK Aqua Celestia, a fragrance that captures the serene beauty of a clear blue sky. The scent opens with a burst of zesty lime and refreshing mint, creating an invigorating and uplifting sensation. As the fragrance evolves, notes of blackcurrant bud and mimosa emerge, adding a touch of floral elegance. The journey concludes with a delicate embrace of musk and soft woods, creating a harmonious and lingering impression. MFK Aqua Celestia is a tribute to the tranquil and boundless expanse of nature."
     },
-
     {
+      "id": 502,
       "name": "My Way Parfum",
       "url": "armani my way new.jpg",
       "tag": "newreleases",
-      "price": "₦100,000"
+      "price": 100000,
+      "price30": 45000,
+      "description": "Discover the new essence of My Way Parfum, a fragrance that embarks on a journey of self-discovery and exploration. The scent opens with a burst of luminous bergamot and sweet orange blossom, creating a fresh and invigorating opening. As the fragrance unfolds, the heart reveals a bouquet of floral notes, including tuberose and jasmine, infusing the composition with elegance and femininity. The journey concludes with the warmth of vanilla and cedarwood, leaving a trail of sophistication and sensuality. My Way Parfum is a testament to embracing one's true path and living life authentically."
     },
     {
-      "name": "MFK Aqua celestia",
+      "id": 503,
+      "name": "MFK Aqua Celestia",
       "url": "mfk new.jpg",
       "tag": "newreleases",
-      "price": "₦235,000"
+      "price": 235000,
+      "price30": 95000,
+      "description": "Experience the freshness and purity of MFK Aqua Celestia, a fragrance that captures the serene beauty of a clear blue sky. The scent opens with a burst of zesty lime and refreshing mint, creating an invigorating and uplifting sensation. As the fragrance evolves, notes of blackcurrant bud and mimosa emerge, adding a touch of floral elegance. The journey concludes with a delicate embrace of musk and soft woods, creating a harmonious and lingering impression. MFK Aqua Celestia is a tribute to the tranquil and boundless expanse of nature."
     },
     {
+      "id": 504,
       "name": "My Way Parfum",
       "url": "armani my way new.jpg",
       "tag": "newreleases",
-      "price": "₦100,000"
+      "price": 100000,
+      "price30": 45000,
+      "description": "Discover the new essence of My Way Parfum, a fragrance that embarks on a journey of self-discovery and exploration. The scent opens with a burst of luminous bergamot and sweet orange blossom, creating a fresh and invigorating opening. As the fragrance unfolds, the heart reveals a bouquet of floral notes, including tuberose and jasmine, infusing the composition with elegance and femininity. The journey concludes with the warmth of vanilla and cedarwood, leaving a trail of sophistication and sensuality. My Way Parfum is a testament to embracing one's true path and living life authentically."
     },
     {
-      "name": "MFK Aqua celestia",
+      "id": 505,
+      "name": "MFK Aqua Celestia",
       "url": "mfk new.jpg",
       "tag": "newreleases",
-      "price": "₦235,000"
+      "price": 235000,
+      "price30": 95000,
+      "description": "Experience the freshness and purity of MFK Aqua Celestia, a fragrance that captures the serene beauty of a clear blue sky. The scent opens with a burst of zesty lime and refreshing mint, creating an invigorating and uplifting sensation. As the fragrance evolves, notes of blackcurrant bud and mimosa emerge, adding a touch of floral elegance. The journey concludes with a delicate embrace of musk and soft woods, creating a harmonious and lingering impression. MFK Aqua Celestia is a tribute to the tranquil and boundless expanse of nature."
     }
   ]
+  
 }

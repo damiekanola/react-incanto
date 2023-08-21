@@ -23,20 +23,20 @@ const Cart = () => {
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    setTotal(cart.reduce((acc, curr) => acc + Number(curr.price)*curr.qty, 0));
+    setTotal(cart.reduce((acc, curr) => acc + Number(curr.selectedPrice)*curr.qty, 0));
   }, [cart]);
 
   return (
     <>
       <Navbar />
       {cart.length <= 0 ? (
-        <div className=" flex items-center justify-center h-[400px]">
+        <div className=" flex items-center justify-center h-[400px] bg-[#FFFFF0]">
           <h1 className=" text-center text-4xl opacity-40">
             YOUR CART IS EMPTY!
           </h1> 
         </div>
       ) : (
-        <div className=" px-3">
+        <div className=" px-3 bg-slate-50 h-[100vh]">
           <ul>
             {cart.map((prod) => (
               <>
@@ -72,7 +72,7 @@ const Cart = () => {
                         <button className=" px-1">+</button>
                       </div>
 
-                      <p className=" ml-2">₦{prod.price}</p>
+                      <p className=" ml-2">₦{prod.selectedPrice}</p>
                     </div>
                   </div>
 
@@ -94,7 +94,7 @@ const Cart = () => {
           </ul>
           <div className=" flex justify-between">
             <h1>SUBTOTAL</h1>
-            <p>{total}</p>
+            <p>₦{total}</p>
           </div>
         </div>
       )}

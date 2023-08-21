@@ -20,12 +20,16 @@ export default function ProductPage() {
   const product = data[tag].find((product) => product.id === parseInt(id));
   console.log(product);
 
-  const [selectedButton, setSelectedButton] = useState(null);
-  const [price, setPrice] = useState(product.price);
+  const price100ml = product.prices.find(
+    (sizeInfo) => sizeInfo.size === "100ml"
+  ).price;
 
-  function handleButton(buttonName, price) {
+  const [selectedButton, setSelectedButton] = useState(null);
+  const [selectedPrice, setSelectedPrice] = useState(price100ml);
+
+  function handleButton(buttonName, sizePrice) {
     setSelectedButton(buttonName);
-    setPrice(price);
+    setSelectedPrice(sizePrice);
   }
 
   return (
@@ -33,7 +37,12 @@ export default function ProductPage() {
       <Navbar />
       <div className=" pt-10 px-10 grid grid-cols-2 gap-12 max-[805px]:hidden">
         <div className=" aspect-square">
-          <Carousel slide={false} leftControl="&larr;" rightControl="&rarr;">
+          <Carousel
+            slide={false}
+            leftControl="&larr;"
+            rightControl="&rarr;"
+            className=" rounded-none"
+          >
             <img src={`/Images/${product.img}`} alt="" className="" />
             <img src={`/Images/${product.img}`} alt="" className="" />
             <img src={`/Images/${product.img}`} alt="" className="" />
@@ -45,39 +54,34 @@ export default function ProductPage() {
           <h1 className=" uppercase text-6xl pb-2">{product.name}</h1>
 
           <hr />
-          <h3 className=" py-5 text-2xl">₦{price}</h3>
+          <h3 className=" py-5 text-2xl">₦{selectedPrice}</h3>
           <div className="flex">
-            <button
-              className=" border p-2 border-red-200 mr-3"
-              value={10}
-              onClick={() => handleButton("10ml", 100)}
-            >
-              10ml
-            </button>
-            <button
-              className=" border p-2 border-red-200 mr-3"
-              value={50}
-              onClick={() => handleButton("50ml", 100)}
-            >
-              50ml
-            </button>
-            <button
-              className=" border p-2 border-red-200 "
-              value={100}
-              onClick={() => handleButton("100ml", product.price)}
-            >
-              100ml
-            </button>
+            {product.prices.map((sizeInfo) => (
+              <button
+                key={sizeInfo.size}
+                className={` border-red-200 p-2 ${
+                  selectedButton === sizeInfo.size
+                    ? " bg-pink-500 text-black"
+                    : ""
+                } mr-3`}
+                onClick={() => handleButton(sizeInfo.size, sizeInfo.price)}
+              >
+                {sizeInfo.size}
+              </button>
+            ))}
           </div>
           <p className=" py-8 text-lg">{product.description}</p>
 
           <div className="flex items-center">
-            <button className=" border border-red-200 p-3 m-auto w-full"  onClick={() => {
-            dispatch({
-              type: "ADD_TO_CART",
-              payload: product,
-            });
-          }}>
+            <button
+              className=" border border-red-200 p-3 m-auto w-full"
+              onClick={() => {
+                dispatch({
+                  type: "ADD_TO_CART",
+                  payload: { ...product, selectedPrice: selectedPrice },
+                });
+              }}
+            >
               ADD TO CART
             </button>
           </div>
@@ -91,7 +95,12 @@ export default function ProductPage() {
         <hr />
 
         <div className=" aspect-square">
-          <Carousel slide={false} leftControl="&larr;" rightControl="&rarr;">
+          <Carousel
+            slide={false}
+            leftControl="&larr;"
+            rightControl="&rarr;"
+            className=" rounded-none"
+          >
             <img
               src={`/Images/${product.img}`}
               alt=""
@@ -115,24 +124,28 @@ export default function ProductPage() {
           </Carousel>
         </div>
 
-        <h3 className=" py-5 text-2xl">₦{price}</h3>
+        <h3 className=" py-5 text-2xl">₦{selectedPrice}</h3>
         <div className="flex mb-4 m-auto">
-          <button className=" border p-2 border-red-200 mr-3" value={10} onClick={() => handleButton("10ml", 100)}>
-            10ml
-          </button>
-          <button className=" border p-2 border-red-200 mr-3" value={50} onClick={() => handleButton("50ml", 100)}>
-            50ml
-          </button>
-          <button className=" border p-2 border-red-200 " value={100} onClick={() => handleButton("100ml", 100)}>
-            100ml
-          </button>
+          {product.prices.map((sizeInfo) => (
+            <button
+              key={sizeInfo.size}
+              className={`border border-red-200 p-2 ${
+                selectedButton === sizeInfo.size
+                  ? " bg-pink-500 text-black"
+                  : ""
+              } mr-3`}
+              onClick={() => handleButton(sizeInfo.size, sizeInfo.price)}
+            >
+              {sizeInfo.size}
+            </button>
+          ))}
         </div>
         <button
           className=" border border-red-200 p-3 m-auto w-full"
           onClick={() => {
             dispatch({
               type: "ADD_TO_CART",
-              payload: product,
+              payload: { ...product, selectedPrice: selectedPrice },
             });
           }}
         >

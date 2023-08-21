@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 export default function CategoryProductPage() {
   const { gender } = useParams();
   console.log(gender);
+
   const product = data.gender.find(
     (product) => product.id === parseInt(gender)
   );
