@@ -115,7 +115,7 @@ const Cart = () => {
                       />
                     </td>
 
-                    <td className=" uppercase flex justify-between py-2 border-b items-center">
+                    <td className=" uppercase flex justify-between py-2 border-b items-center mt-6">
                       <p>{prod.name}</p>
                       <FontAwesomeIcon
                         icon={faTrash}

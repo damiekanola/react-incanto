@@ -40,7 +40,7 @@ export default function CategoryProducts({ item }) {
           onClick={() => {
             dispatch({
               type: "ADD_TO_CART",
-              payload: item,
+              payload: { ...item, selectedPrice: price100ml }
             });
           }}
         >
