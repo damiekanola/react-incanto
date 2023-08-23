@@ -10,6 +10,7 @@ export default function CategoryProducts({ item }) {
   } = CartState();
 
   console.log(cart);
+  const price100ml = item.prices.find((sizeInfo) => sizeInfo.size === "100ml").price;
 
   return (
     <li className=" border-r">
@@ -29,7 +30,7 @@ export default function CategoryProducts({ item }) {
           {item.name}
         </h3>
         <h3 className=" text-center text-lg p-2 font-normal max-[523px]:text-sm">
-          ₦{item.price}
+          ₦{price100ml}
         </h3>
       </Link>
 

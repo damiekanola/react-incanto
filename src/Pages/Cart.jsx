@@ -7,7 +7,7 @@ import FooterWithSocialMediaIcons from "../Components/Footer";
 import { useEffect, useState } from "react";
 
 const Cart = () => {
-  const [qty, setQty] = useState(1);
+  
 
   const {
     state: { cart },
@@ -16,86 +16,178 @@ const Cart = () => {
 
   console.log(cart);
 
-  function increment(prev) {
-    setQty(prev + 1);
-  }
+ 
 
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
-    setTotal(cart.reduce((acc, curr) => acc + Number(curr.selectedPrice)*curr.qty, 0));
+    setTotal(
+      cart.reduce((acc, curr) => acc + Number(curr.selectedPrice) * curr.qty, 0)
+    );
   }, [cart]);
 
   return (
     <>
       <Navbar />
       {cart.length <= 0 ? (
-        <div className=" flex items-center justify-center h-[400px] bg-[#FFFFF0]">
+        <div className=" flex items-center justify-center h-[100vh] bg-[#FFFFF0]">
           <h1 className=" text-center text-4xl opacity-40">
             YOUR CART IS EMPTY!
-          </h1> 
+          </h1>
         </div>
       ) : (
-        <div className=" px-3 bg-slate-50 h-[100vh]">
-          <ul>
-            {cart.map((prod) => (
-              <>
-                {/* <li className=" flex items-center justify-between">
-                <div className=" w-[80px] aspect-square">
-                  <img src={`/Images/${prod.img}`} alt="" />
-                </div>
-                <p>{prod.name}</p>
-                <div>
-                  <button onClick={qty => setQty(qty - 1)}>-</button>
-                  <p>{qty}</p>
-                  <button onClick={prev => setQty(prev + 1)}>+</button>
-                </div>
-                <p>₦{prod.price}</p>
-                <FontAwesomeIcon icon={faTrash} style={{ color: "#000000" }}  onClick={() => {
-            dispatch({
-              type: "REMOVE_FROM_CART",
-              payload: prod,
-            });
-          }}  />
-              </li> */}
-                <li className=" flex border-b justify-between mb-3 items-center">
-                  <div className=" w-[80px] aspect-square">
-                    <img src={`/Images/${prod.img}`} alt="" />
-                  </div>
+        <div className=" px-4   grid grid-cols-3 items-center max-[816px]:block">
+          <table className=" w-[90%] col-span-2 max-[816px]:w-full max-[600px]:hidden">
+            <thead>
+              <tr className=" border-b">
+                <td></td>
+                <td>PRODUCT</td>
+                <td className=" py-3">PRICE</td>
+                <td>QUANTITY</td>
+                <td> </td>
+              </tr>
+            </thead>
+            <tbody>
+              {cart.map((prod) => (
+                <>
+                  <tr className=" border-b my-2">
+                    <td className=" py-1">
+                      <img
+                        src={`/Images/${prod.img}`}
+                        alt=""
+                        className=" w-[80px] aspect-square"
+                      />
+                    </td>
 
-                  <div className=" flex flex-col">
-                    <p className=" uppercase">{prod.name}</p>
-                    <div className=" flex">
-                      <div className=" border px-2">
-                        <button className=" px-1">-</button>
-                        <span className=" px-1">1</span>
-                        <button className=" px-1">+</button>
-                      </div>
+                    <td className=" uppercase">{prod.name}</td>
 
-                      <p className=" ml-2">₦{prod.selectedPrice}</p>
-                    </div>
-                  </div>
+                    <td className="">₦{prod.selectedPrice}</td>
 
-                  <div>
-                    <FontAwesomeIcon
-                      icon={faTrash}
-                      style={{ color: "#000000" }}
-                      onClick={() => {
-                        dispatch({
-                          type: "REMOVE_FROM_CART",
-                          payload: prod,
-                        });
-                      }}
-                    />
-                  </div>
-                </li>
-              </>
-            ))}
-          </ul>
-          <div className=" flex justify-between">
+                    <td>
+                      <select
+                        name=""
+                        id=""
+                        className=" p-0 bg-transparent"
+                        onChange={(e) =>
+                          dispatch({
+                            type: "CHANGE_QUANTITY",
+                            payload: {
+                              id: prod.id,
+                              qty: e.target.value,
+                            },
+                          })
+                        }
+                      >
+                        <option value={1}>1</option>
+                        <option value={2}>2</option>
+                        <option value={3}>3</option>
+                      </select>
+                    </td>
+
+                    <td>
+                      <FontAwesomeIcon
+                        icon={faTrash}
+                        style={{ color: "#000000" }}
+                        onClick={() => {
+                          dispatch({
+                            type: "REMOVE_FROM_CART",
+                            payload: prod,
+                          });
+                        }}
+                      />
+                    </td>
+                  </tr>
+                </>
+              ))}
+            </tbody>
+          </table>
+
+          <table className=" w-full min-[600px]:hidden">
+            <tbody>
+              {cart.map((prod) => (
+                <>
+                  <tr className=" border-b ">
+                    <td className=" py-1 w-[100px]">
+                      <img
+                        src={`/Images/${prod.img}`}
+                        alt=""
+                        className=" w-[80px] aspect-square"
+                      />
+                    </td>
+
+                    <td className=" uppercase flex justify-between py-2 border-b items-center">
+                      <p>{prod.name}</p>
+                      <FontAwesomeIcon
+                        icon={faTrash}
+                        style={{ color: "#000000" }}
+                        onClick={() => {
+                          dispatch({
+                            type: "REMOVE_FROM_CART",
+                            payload: prod,
+                          });
+                        }}
+                      />
+                    </td>
+
+                    <td className=" flex justify-between py-2 border-b">
+                      <p>PRICE</p>
+                      <p>₦{prod.selectedPrice}</p>
+                    </td>
+
+                    <td className="flex justify-between py-2">
+                      <p>Quantity</p>
+                      <select
+                        name=""
+                        id=""
+                        className=" p-0 bg-transparent"
+                        onChange={(e) =>
+                          dispatch({
+                            type: "CHANGE_QUANTITY",
+                            payload: {
+                              id: prod.id,
+                              qty: e.target.value,
+                            },
+                          })
+                        }
+                      >
+                        <option value={1}>1</option>
+                        <option value={2}>2</option>
+                        <option value={3}>3</option>
+                      </select>
+                    </td>
+
+                    <td></td>
+                  </tr>
+                </>
+              ))}
+            </tbody>
+          </table>
+
+          <div className=" border p-4 mt-10">
+            <h1 className=" text-lg py-4">CART TOTAL</h1>
+            <table className=" w-full">
+              <tr className="  border-b p-2">
+                <td className=" p-2 text-lg">Subtotal</td>
+                <td className=" text-lg">₦{total}</td>
+              </tr>
+              <tr className="  border-b p-2  text-lg">
+                <td className=" p-4">Shipping</td>
+                <td>FREE</td>
+              </tr>
+              <tr className="  border-b p-2  text-lg">
+                <td className=" p-4">TOTAL</td>
+                <td>₦{total}</td>
+              </tr>
+            </table>
+            <button className=" w-full p-2 text-white bg-[#2B2D42] mt-4">
+              PROCEED TO CHECKOUT
+            </button>
+          </div>
+
+          {/* <div className=" flex justify-between">
             <h1>SUBTOTAL</h1>
             <p>₦{total}</p>
-          </div>
+          </div> */}
         </div>
       )}
       <FooterWithSocialMediaIcons />

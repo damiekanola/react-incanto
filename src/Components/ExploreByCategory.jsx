@@ -4,7 +4,7 @@ import data from "../../data.json"
 
 export default function ExploreByCategory() {
   return (
-    <secion className="p-10">
+    <section>
       <p className=" font-light text-3xl max-[426px]:text-2xl pt-10">
         Explore By Category
       </p>
@@ -15,6 +15,6 @@ export default function ExploreByCategory() {
             </Link>
         ))}
       </ul>
-    </secion>
+    </section>
   );
 }

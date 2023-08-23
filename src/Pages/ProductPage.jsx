@@ -59,7 +59,7 @@ export default function ProductPage() {
             {product.prices.map((sizeInfo) => (
               <button
                 key={sizeInfo.size}
-                className={` border-red-200 p-2 ${
+                className={`border border-red-200 p-2 ${
                   selectedButton === sizeInfo.size
                     ? " bg-pink-500 text-black"
                     : ""

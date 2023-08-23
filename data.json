@@ -29,8 +29,11 @@
     {
       "id": 100,
       "name": "Black Opium",
-      "price": 70000,
-      "price30": 30000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "opium.jpg",
       "imgHover": "opium 2.jpg",
       "to": "/productpage",
@@ -40,8 +43,11 @@
     {
       "id": 101,
       "name": "Mango Skin",
-      "price": 88000,
-      "price30": 35000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "mango skin.jpg",
       "imgHover": "mango skin.jpg",
       "to": "/productpage",
@@ -51,8 +57,11 @@
     {
       "id": 102,
       "name": "Flowerbomb",
-      "price": 99000,
-      "price30": 38000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "flowerbomb.jpg",
       "imgHover": "flowerbomb 2.jpg",
       "to": "/productpage",
@@ -62,8 +71,11 @@
     {
       "id": 103,
       "name": "Missing Person",
-      "price":80000,
-      "price30": 32000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "missing person.jpg",
       "imgHover": "missing person 2.jpg",
       "to": "/productpage",
@@ -73,8 +85,11 @@
     {
       "id": 104,
       "name": "Glossier You",
-      "price": 67000,
-    "price30": 28000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "you.jpg",
       "imgHover": "you.jpg",
       "to": "/productpage",
@@ -84,8 +99,11 @@
     {
       "id": 105,
       "name": "YSL Mon Paris",
-      "price": 75000,
-    "price30": 30000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "mon paris.jpg",
       "imgHover": "mon paris 2.jpg",
       "to": "/productpage",
@@ -95,8 +113,11 @@
     {
       "id": 106,
       "name": "Donna Born in Roma",
-      "price": 99000,
-      "price30": 38000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "born.jpg",
       "imgHover": "born in roma 2.jpg",
       "to": "/productpage",
@@ -106,8 +127,11 @@
     {
       "id": 107,
       "name": "YSL Libre",
-      "price": 70000,
-      "price30": 28000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "ysl libre.jpg",
       "imgHover": "libre 2.jpg",
       "to": "/productpage",
@@ -117,8 +141,11 @@
     {
       "id": 108,
       "name": "La vie est belle",
-      "price": 70000,
-    "price30": 28000,
+      "prices": [
+        { "size": "30ml", "price": 30000 },
+        { "size": "50ml", "price": 70000 },
+        { "size": "100ml", "price": 120000 }
+      ],
       "img": "la vie.jpg",
       "imgHover": "la vie 2.jpg",
       "to": "/productpage",
@@ -281,18 +308,7 @@
       "img": "born.jpg",
       "description": "Celebrate the essence of strength and femininity with Born in Roma, a fragrance that pays homage to the eternal city of Rome. The scent opens with a burst of zesty Italian mandarin, immediately invigorating the senses and setting the stage for the journey ahead. The heart of the fragrance reveals a delicate interplay of floral notes, including jasmine and creamy orange blossom, adding a touch of elegance and sophistication. As the scent settles, the warmth of vanilla bourbon and woody undertones create a harmonious and lasting impression. Born in Roma is a tribute to the modern woman, a scent that exudes confidence, grace, and timeless allure."
     },
-    {
-      "id": 405,
-      "name": "Baccarat Rouge",
-      "img": "baccarat rouge.jpg",
-      "tag": "bestsellers",
-      "prices": [
-        { "size": "30ml", "price": 80000 },
-        { "size": "50ml", "price": 235000 },
-        { "size": "100ml", "price": 350000 }
-      ],
-      "description": "Elevate your senses with Baccarat Rouge, a fragrance that epitomizes opulence and luxury. Opening with a burst of vibrant saffron and exotic jasmine, this scent immediately captivates with its rich and decadent aroma. As the fragrance unfolds, notes of amberwood and cedarwood emerge, adding a warm and sensual depth to the composition. The journey concludes with a delicate embrace of musk, leaving a trail of elegance and sophistication. Baccarat Rouge is a celebration of indulgence and refinement, a fragrance that leaves an unforgettable impression."
-    },
+    
     {
       "id": 406,
       "name": "Cloud",

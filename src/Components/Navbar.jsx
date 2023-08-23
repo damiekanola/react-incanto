@@ -6,10 +6,11 @@ import {
   faX
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import Hamburger from "./Hamburger";
 import { CartState } from "../Context/Context";
 
 
-export default function Navbar({ handleToggle, isOpen}) {
+export default function Navbar() {
   const {
     state: { cart },
     
@@ -22,13 +23,8 @@ export default function Navbar({ handleToggle, isOpen}) {
           <li className="pr-4">BATH/BODY</li>
           <li>GIFT SETS</li>
         </ul>
-        { isOpen?  <FontAwesomeIcon icon={faX} style={{color: "#000000",}} onClick={handleToggle}/>  : <FontAwesomeIcon
-          icon={faBars}
-          style={{ color: "#000000" }}
-          className=" hidden max-[800px]:block"
-          onClick={handleToggle}
-        />
-       }
+         <Hamburger />
+       
        <Link to={"/"}>
        <h1 className=" font-[360] text-3xl max-[800px]:text-2xl">
           INCANTO
