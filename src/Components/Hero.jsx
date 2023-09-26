@@ -1,5 +1,4 @@
 import { Carousel } from "flowbite-react";
-
 import { Flowbite } from 'flowbite-react';
 
 const customTheme  = {
@@ -20,11 +19,11 @@ export default function Hero() {
         <div className="relative">
         {/* <img src={`./src/images/mfk.jpg`}alt="" className=" w-full object-cover max-[420px]:h-[200px] max-h-[500px] h-[300px] min-[872px]:h-[350px] min-[1004px]:h-[450px]"/> */}
         <Flowbite theme={{ theme: customTheme }}>
-        <Carousel className="h-[400px]" scrollContainer="new" slideInterval={5000} indicators={false} slide={true} leftControl=" " rightControl=' '>
-        <img src={`/Images/mfk.jpg`}alt="" className=" w-full object-cover h-[400px] "/>
-        <img src="/Images/jo malone cologne.jpg" alt="" className=" w-full object-cover h-[400px]" />
-        <img src="/Images/jo malone.jpg" alt="" className=" w-full object-cover h-[400px]" />
-        <img src="/Images/mfk 2.jpg" alt="" className=" w-full object-cover h-[400px]" />
+        <Carousel className="h-[450px]" scrollContainer="new" slideInterval={5000} indicators={false} slide={true} leftControl=" " rightControl=' '>
+        <img src={`/Images/mfk.jpg`}alt="" className=" w-full object-cover h-[450px] "/>
+        <img src="/Images/jo malone cologne.jpg" alt="" className=" w-full object-cover h-[450px]" />
+        <img src="/Images/jo malone.jpg" alt="" className=" w-full object-cover h-[450px]" />
+        <img src="/Images/mfk 2.jpg" alt="" className=" w-full object-cover h-[450px]" />
         </Carousel>
         </Flowbite>
        <Link to={"/categories"} >

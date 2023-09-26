@@ -10,7 +10,7 @@ export default function ExploreByCategory() {
       </p>
       <ul className="pt-10 grid grid-cols-3 max-[620px]:grid-cols-2 max-[430px]:grid-cols-1 gap-5 ">
         {data.gender.map((item) => (
-            <Link key={item.name} to={`${item.to}/${item.id}`}>
+            <Link key={item.name} to={`/categories/${item.id}`}>
           <CategoryGroup name={item.name} url={item.url} />
             </Link>
         ))}

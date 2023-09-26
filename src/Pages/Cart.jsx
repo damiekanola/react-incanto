@@ -1,5 +1,6 @@
 import Navbar from "../Components/Navbar";
 import { CartState } from "../Context/Context";
+import { Link } from "react-router-dom";
 
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -179,9 +180,11 @@ const Cart = () => {
                 <td>₦{total}</td>
               </tr>
             </table>
+            <Link to="/checkout">
             <button className=" w-full p-2 text-white bg-[#2B2D42] mt-4">
               PROCEED TO CHECKOUT
             </button>
+            </Link>
           </div>
 
           {/* <div className=" flex justify-between">

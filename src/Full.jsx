@@ -14,7 +14,6 @@ export default function Full() {
   return (
     <>
       <Navbar />
-
       <Hero />
       <BestsellersList />
       <NewRealeases />
