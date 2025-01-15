@@ -2,7 +2,7 @@ import Navbar from "../Components/Navbar";
 import FooterWithSocialMediaIcons from "../Components/Footer";
 import data from "../../data.json";
 
-import CategoryProducts from "./CategoryProducts";
+import CategoryProducts from "../Components/CategoryProducts";
 import { useParams } from "react-router-dom";
 
 export default function CategoryProductPage() {
@@ -13,7 +13,6 @@ export default function CategoryProductPage() {
     (product) => product.id === parseInt(gender)
   );
   console.log(product);
-  const length = product.length;
   return (
     <>
       <Navbar />
@@ -41,7 +40,7 @@ export default function CategoryProductPage() {
       <div className=" px-32 max-[893px]:px-10 max-[640px]:px-5">
         <div className=" flex justify-between items-center max-[640px]:hidden">
           <p className=" uppercase py-4 text-xl ">
-            {product.name} FRAGRANCES ({length})
+            {product.name} FRAGRANCES
           </p>
         </div>
 

@@ -43,10 +43,10 @@ export default function ProductPage() {
             rightControl="&rarr;"
             className=" rounded-none"
           >
-            <img src={`/Images/${product.img}`} alt="" className="" />
-            <img src={`/Images/${product.img}`} alt="" className="" />
-            <img src={`/Images/${product.img}`} alt="" className="" />
-            <img src={`/Images/${product.img}`} alt="" className="" />
+            <img src={`/Images/${product.img}`} alt="" />
+            <img src={`/Images/${product.img}`} alt="" />
+            <img src={`/Images/${product.img}`} alt="" />
+            <img src={`/Images/${product.img}`} alt="" />
           </Carousel>
         </div>
 
